@@ -17,7 +17,7 @@ function generatePassword() {
   includes += includeSymbols.checked ? Symbols : "";
   includes += includeNumbers.checked ? Numbers : "";
   for (let i = 0; i < passwordLength.value; i++) {
-    generated += includes.charAt(Math.random() * includes.length + 1);
+    generated += includes.charAt(Math.random() * includes.length);
   }
   password.value = generated;
 }
