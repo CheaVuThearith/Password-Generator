@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="flex flex-col items-center justify-center">
+    <div class="flex flex-col mt-5 items-center justify-center">
       <div class="flex flex-col">
         <h1 class="self-center pb-3 text-3xl font-extrabold">
           Generate a Password!
@@ -30,26 +30,25 @@
             id="passwordLength"
           />
         </label>
-
         <label for="includeLowercase">
           <input type="checkbox" name="" id="includeLowercase" />
           Include Lowercase
         </label>
-
         <label for="includeUppercase">
           <input type="checkbox" name="" id="includeUppercase" />
           Include Uppercase
         </label>
-
         <label for="includeNumbers">
           <input type="checkbox" name="" id="includeNumbers" />
           Include Numbers
         </label>
-
         <label for="includeSymbols">
           <input type="checkbox" name="" id="includeSymbols" />
           Include Symbols
         </label>
+      </div>
+
+      <div class="justify-cente</label>r flex">
         <button
           class="mt-3 self-center rounded-md border border-black bg-white px-4 py-2 text-black transition-all duration-200 hover:scale-110 hover:bg-black hover:text-white active:-translate-y-2"
           onclick="generatePassword()"
