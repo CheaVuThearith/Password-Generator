@@ -21,3 +21,10 @@ function generatePassword() {
   }
   password.value = generated;
 }
+
+passwordLength.addEventListener("keypress", (event) => {
+  const key = event.key;
+  if (isNaN(key)) {
+    event.preventDefault();
+  }
+});
